@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.nav  {
+    background-color: rgb(43, 118, 114);
+    /* width: 100%; */
+    height: 70px;
+    color: azure;
+}
+.nav li {
+    font-weight: 700;
+    font-size: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-family: "Bona Nova SC", serif;
+}
+.game-containear {
+    margin-top: 50px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    
+   
+}
+.containear {
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box {
+    border: 2px solid black;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color:rgb(43, 118, 108);
+    color: white;
+}
+.game-info {
+    padding: 0 10px;
+} 
+#reset {
+    margin: 10px;
+    width: 90px;
+   color: rgb(255, 255, 255);
+    height: 40px;
+    background-color:  rgb(43, 118, 114);
+    font-weight: 500;
+    font-size: 20px;
+    padding: 0;
+    border-radius: 10%;
+    position: absolute;
+    top: 40%;
+   
+}
+.info {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+   position: relative;
+   left: 30%;
+   top: 15px;
+}
+/*  for border none we make some utility classe  */
+
+.bt-0 {
+    border-top: none;
+}
+.bl-0 {
+    border-left: none;
+}
+.br-0 {
+    border-right: none;
+}
+.bb-0 {
+    border-bottom: none;
+}
+
+@media screen and (max-width: 800px) 
+    {
+        .game-containear {
+            flex-wrap: wrap;
+        }
+        .game-info {
+            margin-top: 34px;
+        }
+        .boxtext {
+            font-size: 800px;
+        }
+    }
